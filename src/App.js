@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import FeaturedCards from "./components/FeaturedCards";
 import FoodMenu from "./components/FoodMenu";
 import Categories from "./components/Categories";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <FeaturedCards />
       <FoodMenu />
       <Categories />
+      <Footer />
     </div>
   );
 };
