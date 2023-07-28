@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Swift-Bites/static/css/main.4f115b90.css",
+    "main.js": "/Swift-Bites/static/js/main.68c211a4.js",
+    "index.html": "/Swift-Bites/index.html",
+    "main.4f115b90.css.map": "/Swift-Bites/static/css/main.4f115b90.css.map",
+    "main.68c211a4.js.map": "/Swift-Bites/static/js/main.68c211a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f115b90.css",
+    "static/js/main.68c211a4.js"
+  ]
+}
