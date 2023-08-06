@@ -4,7 +4,7 @@ const FeaturedCards = () => {
   return (
     <div className="max-w-[1640px] mx-auto px-4 py-12 grid md:grid-cols-3 gap-6">
       {/* Cards */}
-      <div className="rounded-full relative">
+      <div className="rounded-full relative hover:scale-105 duration-1000">
         {/* Overlay */}
         <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">Fresh Breakfast</p>
@@ -19,7 +19,7 @@ const FeaturedCards = () => {
           alt="/"
         />
       </div>
-      <div className="rounded-full relative">
+      <div className="rounded-full relative hover:scale-105 duration-1000">
         {/* Overlay */}
         <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">Offer Zone</p>
@@ -34,7 +34,7 @@ const FeaturedCards = () => {
           alt="/"
         />
       </div>
-      <div className="rounded-full relative">
+      <div className="rounded-full relative hover:scale-105 duration-1000">
         {/* Overlay */}
         <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">Desserts</p>

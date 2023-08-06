@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       {/* Left Side */}
       <div className="flex items-center">
-        <div className="cursor-pointer hover:scale-105 duration-300">
+        <div className="cursor-pointer p-2 rounded-full hover:bg-gray-100">
           <AiOutlineMenu size={27} onClick={() => setDrawer(!drawer)} />
         </div>
         <h1 className="text-2xl sm:text-3xl px-2">
@@ -60,7 +60,7 @@ const Navbar = () => {
       {/* Side Slide-In Menu */}
       {/* Overlay */}
       {drawer ? (
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0 transition-opacity duration-1000"></div>
       ) : (
         ""
       )}
@@ -73,14 +73,15 @@ const Navbar = () => {
             : "fixed left-[-100%] top-0 w-[300px] h-screen z-10 bg-white duration-300"
         }
       >
-        <AiOutlineClose
-          size={30}
-          className="absolute top-4 right-4 cursor-pointer hover:scale-105 duration-300"
-          onClick={() => setDrawer(!drawer)}
-        />
-        <h2 className="text-2xl p-4">
-          Swift <span className="font-bold">Bites</span>
-        </h2>
+        <div className="flex items-center justify-between">
+          <div className="text-2xl p-4">
+            Swift <span className="font-bold">Bites</span>
+          </div>
+          <div className="mr-2 cursor-pointer p-2 rounded-full hover:bg-gray-100">
+            <AiOutlineClose size={30} onClick={() => setDrawer(!drawer)} />
+          </div>
+        </div>
+
         <nav>
           <ul className="flex flex-col py-4 text-gray-800">
             <li className="text-lg py-4 pl-4 flex items-center hover:bg-gray-100">
